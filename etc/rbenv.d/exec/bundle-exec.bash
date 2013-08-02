@@ -12,7 +12,7 @@ function hasGemfile() {
 }
 
 function hasBundler() {
-  rbenv which bundle > /dev/null 2>&1
+  rbenv-which bundle > /dev/null 2>&1
 }
 
 if [ -z "$NO_BUNDLE_EXEC" -a "$RBENV_COMMAND" != "bundle" ] && hasBundler && hasGemfile; then
